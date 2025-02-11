@@ -1,0 +1,77 @@
+/* Question: What are the in-demand skills 
+for data analysts.
+- Why? Retrieves the top 5 skills with the
+ highest demand in the job market, providing
+insights into the most valuable skills for
+ the job seekers.
+ */
+
+
+SELECT
+c.skills,
+c.skill_id,
+count(*) AS skill_count
+FROM skills_job_dim AS a
+LEFT OUTER JOIN job_postings_fact AS b
+ON a.job_id = b.job_id
+INNER JOIN skills_dim c
+ON a.skill_id = c.skill_id
+WHERE job_title_short = 'Data Analyst' 
+AND job_work_from_home = 'TRUE'
+GROUP BY c.skill_id
+ORDER BY skill_count DESC
+LIMIT 10;
+
+
+[
+  {
+    "skills": "sql",
+    "skill_id": 0,
+    "skill_count": "7291"
+  },
+  {
+    "skills": "excel",
+    "skill_id": 181,
+    "skill_count": "4611"
+  },
+  {
+    "skills": "python",
+    "skill_id": 1,
+    "skill_count": "4330"
+  },
+  {
+    "skills": "tableau",
+    "skill_id": 182,
+    "skill_count": "3745"
+  },
+  {
+    "skills": "power bi",
+    "skill_id": 183,
+    "skill_count": "2609"
+  },
+  {
+    "skills": "r",
+    "skill_id": 5,
+    "skill_count": "2142"
+  },
+  {
+    "skills": "sas",
+    "skill_id": 186,
+    "skill_count": "933"
+  },
+  {
+    "skills": "sas",
+    "skill_id": 7,
+    "skill_count": "933"
+  },
+  {
+    "skills": "looker",
+    "skill_id": 185,
+    "skill_count": "868"
+  },
+  {
+    "skills": "azure",
+    "skill_id": 74,
+    "skill_count": "821"
+  }
+]
