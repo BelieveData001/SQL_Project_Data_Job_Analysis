@@ -31,3 +31,106 @@ AND job_location = 'Anywhere'
 AND skills IS NOT NULL
 ORDER BY salary_year_avg DESC
 LIMIT 10;
+
+[
+  {
+    "skills": "sql",
+    "type": "programming",
+    "job_title_short": "Data Analyst",
+    "job_location": "Anywhere",
+    "job_country": "United States",
+    "job_schedule_type": "Full-time",
+    "salary_year_avg": "255829.5",
+    "company_name": "AT&T"
+  },
+  {
+    "skills": "python",
+    "type": "programming",
+    "job_title_short": "Data Analyst",
+    "job_location": "Anywhere",
+    "job_country": "United States",
+    "job_schedule_type": "Full-time",
+    "salary_year_avg": "255829.5",
+    "company_name": "AT&T"
+  },
+  {
+    "skills": "r",
+    "type": "programming",
+    "job_title_short": "Data Analyst",
+    "job_location": "Anywhere",
+    "job_country": "United States",
+    "job_schedule_type": "Full-time",
+    "salary_year_avg": "255829.5",
+    "company_name": "AT&T"
+  },
+  {
+    "skills": "azure",
+    "type": "cloud",
+    "job_title_short": "Data Analyst",
+    "job_location": "Anywhere",
+    "job_country": "United States",
+    "job_schedule_type": "Full-time",
+    "salary_year_avg": "255829.5",
+    "company_name": "AT&T"
+  },
+  {
+    "skills": "databricks",
+    "type": "cloud",
+    "job_title_short": "Data Analyst",
+    "job_location": "Anywhere",
+    "job_country": "United States",
+    "job_schedule_type": "Full-time",
+    "salary_year_avg": "255829.5",
+    "company_name": "AT&T"
+  },
+  {
+    "skills": "aws",
+    "type": "cloud",
+    "job_title_short": "Data Analyst",
+    "job_location": "Anywhere",
+    "job_country": "United States",
+    "job_schedule_type": "Full-time",
+    "salary_year_avg": "255829.5",
+    "company_name": "AT&T"
+  },
+  {
+    "skills": "pandas",
+    "type": "libraries",
+    "job_title_short": "Data Analyst",
+    "job_location": "Anywhere",
+    "job_country": "United States",
+    "job_schedule_type": "Full-time",
+    "salary_year_avg": "255829.5",
+    "company_name": "AT&T"
+  },
+  {
+    "skills": "pyspark",
+    "type": "libraries",
+    "job_title_short": "Data Analyst",
+    "job_location": "Anywhere",
+    "job_country": "United States",
+    "job_schedule_type": "Full-time",
+    "salary_year_avg": "255829.5",
+    "company_name": "AT&T"
+  },
+  {
+    "skills": "jupyter",
+    "type": "libraries",
+    "job_title_short": "Data Analyst",
+    "job_location": "Anywhere",
+    "job_country": "United States",
+    "job_schedule_type": "Full-time",
+    "salary_year_avg": "255829.5",
+    "company_name": "AT&T"
+  },
+  {
+    "skills": "excel",
+    "type": "analyst_tools",
+    "job_title_short": "Data Analyst",
+    "job_location": "Anywhere",
+    "job_country": "United States",
+    "job_schedule_type": "Full-time",
+    "salary_year_avg": "255829.5",
+    "company_name": "AT&T"
+  }
+]
